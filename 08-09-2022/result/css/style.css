@@ -1,0 +1,18 @@
+.header{
+    color: red;
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline;
+}
+.headPara{
+    color: green;
+}
+.headList{
+    color: blueviolet;
+}
+p{
+    color: red;
+}
+ul{
+    color: green;
+}

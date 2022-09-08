@@ -1,0 +1,12 @@
+div{
+    border: 2px solid red;
+    width: 500px;
+    height: 500px;
+    margin: 10px;
+}
+
+div h1 {
+    color: red;
+    border: 2px solid black;
+    margin: 10px;
+}

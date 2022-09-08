@@ -1,0 +1,14 @@
+div{
+    border: 2px solid black;
+    width: 500px;
+    height: 500px;
+    margin: 10px;
+}
+
+div p {
+    color: red;
+    margin-left: 200px;
+    margin-top: 250px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}

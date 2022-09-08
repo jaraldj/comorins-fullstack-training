@@ -1,0 +1,11 @@
+div{
+    width: 500px;
+    height: 500px;
+    border: 2px solid red;
+    padding: 10px;
+}
+
+h1{
+    border: 2px solid green;
+    padding: 10px;
+}

@@ -1,0 +1,22 @@
+.parent .parent-1 .p1-child-1 h1{
+    text-align: center;
+    color: red;
+    font-size: 50px;
+}
+
+.parent .parent-1 .p1-child-1 .child-1-head2{
+    color: green;
+    text-decoration: underline;
+}
+
+.parent .parent-1 .p1-child-1 .child-1-para {
+    color: brown;
+    border: 3px solid green;
+    background-color: yellow;
+    width: 700px;
+}
+
+.parent .parent-1 .pic {
+    width: 700px;
+    height: 500px;
+}
