@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    border: 0;
+}
+
+
+
+h1{
+    position: sticky;
+    background-color: green;
+    height: 100px;
+    top: 0;
+    left: 0;
+}
+
+h2{
+    position: fixed;
+    background-color: green;
+    height: 100px;
+    top: 0;
+    left: 0; 
+}

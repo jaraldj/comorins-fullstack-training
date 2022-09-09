@@ -1,0 +1,21 @@
+*{
+    border: 0;
+    padding: 0;
+}
+.main{
+    width: 500px;
+    height: 500px;
+    border: 2px solid red;
+}
+
+body{
+    position: relative;
+    height: 700px;
+}
+.sub{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border: 2px solid red;
+}
+
