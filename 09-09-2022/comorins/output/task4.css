@@ -4,56 +4,45 @@
     margin: 0;
 }
 
-body{
-    height: 98.5vh;
+.main{
+    margin: 3%;
+    position: relative;
+    height: 600px;
+    width: 1000px;
     border: 5px solid #757575;
 }
 
-body .brown-block{
-    position: fixed;
-    top: 0;
-    left: 0;
+.box{
+    position: absolute;
     height: 200px;
     width: 250px;
     border: 3px solid #757575;
+}
+
+.main .brown-block{  
     background-color: #B36000;
 }
 
-body .violet-block{
-    position: fixed;
-    height: 200px;
-    width: 250px;
-    border: 3px solid #757575;
+.main .violet-block{
     right: 0;
     top: 0;
     background-color: #B300B3;
 }
 
-body .green-block{
-    position: fixed;
-    height: 200px;
-    width: 250px;
-    border: 3px solid #757575;
-    top: 36%;
-    left: 41.5%;
+.main .green-block{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: #00B32E;
 }
 
-body .blue-block{
-    position: fixed;
-    height: 200px;
-    width: 250px;
-    border: 3px solid #757575;
+.main .blue-block{
     left: 0;
     bottom: 0;
     background-color: #5300B3;
 }
 
-body .cyan-block{
-    position: fixed;
-    height: 200px;
-    width: 250px;
-    border: 3px solid #757575;
+.main .cyan-block{
     right: 0;
     bottom: 0;
     background-color: #0091B3;
