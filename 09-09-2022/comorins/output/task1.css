@@ -1,0 +1,13 @@
+div{
+    border: 10px solid #0201FD;
+    width: 250px;
+    height: 250px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    background-color: #00BFFE;
+}
+
+p{
+    margin-left: 10px;
+    font-size: 13px;
+}
