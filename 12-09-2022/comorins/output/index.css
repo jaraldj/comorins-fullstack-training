@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*index style starts here*/
+
+.head{
+    background-color: #333;
+    padding: 1.5%;
+    position: sticky;
+    top: 0;
+}
+
+section{
+    margin-top: 20px;
+}
+
+.head ul{
+    text-align: center;
+}
+
+.head ul li{
+    display: inline-block;
+    padding-right: 10px;
+    font-size: 18px;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+/*index style ends here*/
+/*form style starts here*/
+.form{
+    width: 35%;
+    margin: 0 auto;
+}
+label{
+    width: 120px;
+    display: inline-block;
+}
+span{
+    font-size: 11px;
+}
+.inputDiv input {
+    border: 1px solid #ced4da;
+    border-bottom: 1px solid #FAA61A;
+    width: 400px;
+    height: 30px;
+}
+textarea{
+    border: 1px solid #ced4da;
+    border-bottom: 1px solid #FAA61A;
+    width: 400px;
+    height: 30px;
+}
+input[type=submit]{
+    float: right;
+    background-color: #FAA61A;
+    color: #fff;
+    border-color: #FAA61A;
+    padding: 2px;
+}
+/*form style ends here*/
+/*display style starts here*/
+.ulList{
+    display: inline-block;
+    width: 48%;
+    background-color: yellow;
+    padding-left: 20px;
+}
+.olList{
+    display: inline-block;
+    width: 48%;
+    background-color: yellow;
+    padding-left: 20px;
+}
+.liHead{
+    color: red;
+}
+/*display style ends here*/
