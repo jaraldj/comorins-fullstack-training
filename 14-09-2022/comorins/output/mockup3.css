@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    background-color: #A9A9A9;
+}
+
+.body{
+    margin: 0 auto;
+    width: 75%;
+}
+
+/* header */
+
+header{
+    padding:1% 45%;
+    color: #fff;
+}
+
+/* nav */
+
+nav{
+    background-color: #FC81FF;
+}
+
+.navList, .l1, form, input, .navLi, .search{
+    display: inline-block;
+}
+
+.navList li{
+    padding: 20px 50px;
+}
+
+.navLi{
+    padding: 0px 100px;
+}
+input[type=submit]{
+    background-color: #313432;
+    color: #fff;
+}
+/* section  */
+section{
+    display: inline-block;
+    margin: 5px 0px;
+}
+/* main content */
+.main{
+    background: #fff;
+    width: 75%;
+    display: inline-block;
+}
+
+h2{
+    text-align: center;
+    padding: 20px 0px;
+}
+p{
+    padding: 10px;
+}
+h3{
+    padding: 10px 10px;
+}
+
+/* sidebar */
+.sidebar h2{
+    text-align: left;
+}
+
+.sidebar{
+    display: inline-block;
+    width: 22.79%;
+    background: #FF81FF;
+    vertical-align: top;
+    padding-left: 20px;
+    padding-bottom: 144px;
+}
+
+.sidebar li{
+    padding-bottom: 15px;
+}
+/* footer */
+.foot{
+    background: #fff;
+    padding: 10px 0px;
+}
