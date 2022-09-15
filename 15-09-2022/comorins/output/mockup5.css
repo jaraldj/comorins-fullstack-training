@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    border: 0;
+}
+
+
+/* home banner */
+
+.homebanner{
+    background-color: #C3C3C3;
+}
+.bannerDesign{
+    margin: 0 auto;
+    width: 70%;
+    overflow: hidden;
+    padding-bottom: 50px;
+}
+header{
+    margin: 20px 0px;
+}
+
+.logo{
+    width: 10%;
+    color: #6B6B6B;
+}
+li, .logo, .headnav{
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.headnav{
+    float: right;
+}
+.headnav li:last-child{
+    padding-right: 0px;
+}
+a{
+    text-decoration: none;
+    color: #6B6B6B;
+}
+
+.intro{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+.slider{
+    width: 59%;
+    display: inline-block;
+    background-color: #9F9F9F;
+    color: #6B6B6B;
+}
+
+.slider p{
+    padding: 100px;
+}
+
+.grid{
+    margin: 0 auto;
+    width: 69%;
+    overflow: hidden;
+}
+
+.gridChild{
+    display: inline-block;
+    width: 33%;
+    background-color: #C3C3C3;
+    margin-top: 20px;
+    text-align: center;
+    padding: 100px 0px;
+    color: #6B6B6B;
+}
+
+.tweet{
+    margin: 0 auto;
+    width: 69%;
+    background-color: #C3C3C3;
+    margin-top: 20px;
+    padding: 20px 0px;
+}
+
+.tweet p{
+    margin-left: 25px;
+    color: #6B6B6B;
+}
+
+.foot{
+    background-color: #C3C3C3;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+footer{
+    margin: 0 auto;
+    width: 70%;
+}
+
+.footnav {
+    display: inline-block;
+    width: 40%;
+}
+.footnav ul{
+    padding-left: 0px;
+}
+
+.foot p{
+    width: 8.8%;
+    float: right;
+    color: #6B6B6B;
+}
