@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@media(max-width:1200px){
+    .child{
+        width: 24%;
+        display: inline-block;
+        background-color: red;
+    }
+}
+@media(max-width:991px){
+    .child{
+        width: 49%;
+    }
+}
+@media(max-width:767px){
+    .child{
+        width: 100%;
+        display: block;
+    }
+}

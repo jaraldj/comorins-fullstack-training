@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@media(min-width:575px){
+    .child{
+        background-color: bisque;
+    }
+}
+@media(min-width:767px){
+    .child{
+        width: 49%;
+        display: inline-block;
+    }
+}
+@media(min-width:991px){
+    .child{
+        width: 30%;
+        display: inline-block;
+    }
+}
+@media(min-width:1200px){
+    .child{
+        width: 24%;
+    }
+}
