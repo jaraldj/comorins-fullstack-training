@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navs li{
+    padding-right: 54px;
+}
+.navs li:last-child{
+    padding-right: 0;
+}
+
+.slide{
+    background-color: #F3F2EE;
+    padding: 50px 0px 50px 0px;
+    border-top: 2px solid #000000;
+}
+.card1{
+    background-color: #F3F2EE;
+    border: none;
+}
+.slide a{
+    color: #6D9D34;
+}
+.slide img{
+    border: 1px solid #6F6C6C;
+    padding: 10px;
+}
+
+.bottom-col h2{
+    font-size: 43px;
+    line-height: 65.87px;
+    color: #8f8f8f;
+    border-bottom: 2px solid #6F6C6C;
+}
+.bottom-img img{
+    border: 1px solid #6F6C6C;
+    padding: 10px;
+}
+
+.sidebar-content{
+    border-bottom: 2px solid ;
+}

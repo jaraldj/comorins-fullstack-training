@@ -1,0 +1,23 @@
+
+@media (min-width: 768px){
+    .box1{
+        margin-bottom: 50px;
+    }
+}
+
+.container-30{
+    padding: 30px 0px;
+}
+
+.container-left{
+    padding: 10px 0px 10px 100px;
+}
+.box{
+    height: 500px;
+}
+.h3-padding{
+    padding-top: 250px;
+}
+.foot-container{
+    padding: 30px 0px;
+}
