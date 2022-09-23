@@ -128,7 +128,6 @@
     }
     .box{
         display: inline-block;
-        height: 445px;
         background-color: #FFFFFF;
         vertical-align: top;
         border-radius: 10px;
@@ -181,7 +180,7 @@
         color: #FFFFFF;
     }
     .foot-logo{
-        width: 45%;
+        width: 30%;
         margin: 0 auto;
     }
     .foot-list li{
@@ -296,7 +295,7 @@
         background-repeat: no-repeat;
         background-size: 100% 100%;
         display: table;
-        width: 100%;
+        width: 95%;
         padding-top: 4%;
     }
     .banner-content{
@@ -839,7 +838,6 @@
     header{
         position: fixed;
         background-color: #FCFCFC;
-        width: 100%;
         z-index: 1;
     }
     .header{
@@ -891,10 +889,11 @@
         display: table-cell;
         vertical-align: top;
         padding-left: 75px;
+        width: 65%;
     }
     .banner img{
         display: table-cell;
-        padding: 65px 87px 81px 0px;
+        padding: 65px 0px 81px 0px;
     }
     .banner-content h1{
         font-size: 44px;
