@@ -4,11 +4,12 @@
     font-family: Helvetica;
     font-style: normal;
 }
-
+/* media query for small device starts here */
 @media(min-width:500px){
-    
+    /* header starts */
     header{
-        position: fixed;
+        position: sticky;
+        top: 0;
         background-color: #FCFCFC;
         width: 100%;
         z-index: 1;
@@ -32,8 +33,9 @@
         vertical-align: middle;
         text-align: right;
     }
-    
+    /* header ends here */
 
+    /* banner starts here */
     .banner{
         background-image: url("bg-img.png");
         background-repeat: no-repeat;
@@ -58,7 +60,9 @@
         color: #666666;
         padding: 26px 0px;
     }
+    /* banner ends here */
 
+    /*  */
     .insight-box{
         background-color: #1F2631;
     }
@@ -72,8 +76,8 @@
         color: #FFFFFF;
         text-align: center;
     }
-
-
+    /*  */
+    /* Filter starts here */
     .filter-list ul{
         padding: 35px 0px;
     }
@@ -110,8 +114,9 @@
         background-color: #f5f5f5;
         text-align: center;
     }
+    /* Folter ends here */
 
-
+    /* card starts here */
     .main{
         background-color: #f5f5f5;
     }
@@ -128,6 +133,7 @@
     }
     .box{
         display: inline-block;
+        height: 445px;
         background-color: #FFFFFF;
         vertical-align: top;
         border-radius: 10px;
@@ -168,7 +174,8 @@
         line-height: 21px;
         margin-bottom: 33px;
     }
-
+    /* cards ends here */
+    /* footer starts here */
     .top-footer{
         background-color: #494D56;
     }
@@ -239,8 +246,10 @@
         text-align: center;
         padding-left: 0px;
     }
+    /* footer ends here */
 }
 
+/* media query for md starts here */
 @media(min-width:767px){
 
     .container{
@@ -249,7 +258,8 @@
     }
     
     header{
-        position: fixed;
+        position: sticky;
+        top: 0;
         background-color: #FCFCFC;
         width: 100%;
         z-index: 1;
@@ -531,7 +541,7 @@
     }
 
 }
-
+/* media query for lg starts here */
 @media(min-width:991px){
     
     .container{
@@ -540,7 +550,8 @@
     }
     
     header{
-        position: fixed;
+        position: sticky;
+        top: 0;
         background-color: #FCFCFC;
         width: 100%;
         z-index: 1;
@@ -704,9 +715,6 @@
         box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.1);
     }
 
-    .box:hover{
-        box-shadow: 0px 0px 20px 5px #B9B22C;
-    }
     .content-img{
         width: 100%;
     }
@@ -734,9 +742,6 @@
         line-height: 23px;
         margin-bottom: 16px;
     }
-    .sub-content h3:hover{
-        color: #B9B22C;
-    }
     .sub-content p{
         color: #595959;
         font-size: 12px;
@@ -757,8 +762,6 @@
     .foot-list{
         display: table-cell;
         width: 50%;
-        /* column-count: 3;
-        padding-left: 200px; */
         vertical-align: middle;
     }
     .social-media{
@@ -774,9 +777,6 @@
         width: 30%;
         padding-bottom: 15px;
         list-style: none;
-        /* column-count: 3;
-        padding-bottom: 20px;
-        list-style: none; */
     }
     .foot-list a{
         color: #FFFFFF;
@@ -828,6 +828,7 @@
 
 }
 
+/* media query for xl starts here */
 @media(min-width:1200px){
 
     .container{
@@ -836,7 +837,8 @@
     }
     
     header{
-        position: fixed;
+        position: sticky;
+        top: 0;
         background-color: #FCFCFC;
         z-index: 1;
     }
@@ -950,6 +952,7 @@
         line-height: 24px;
         text-align: left;
     }
+    
     .filter-list li:first-child{
         background-color: #EC483C;
     }
@@ -982,8 +985,9 @@
         background-color: #f5f5f5;
     }
     .main-container{
-        width: 93%;
+        width: 94%;
         margin: 0 auto;
+        margin-left: 75px;
     }
     .content{
         display: inline-block;
@@ -1003,9 +1007,6 @@
         box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.1);
     }
 
-    .box:hover{
-        box-shadow: 0px 0px 20px 5px #B9B22C;
-    }
     .content-img{
         width: 100%;
     }
@@ -1036,6 +1037,10 @@
     .sub-content h3:hover{
         color: #B9B22C;
     }
+    .box:hover{
+        box-shadow: 0px 0px 20px 5px #B9B22C;
+    }
+    
     .sub-content p{
         color: #595959;
         font-size: 16px;

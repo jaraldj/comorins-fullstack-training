@@ -116,17 +116,18 @@ nav a{
     margin-bottom: 16px;
 }
 .secondbox img{
-    width: 202px;
-    display: inline-block;
+    float: left;
+    margin-right: 10px;
+    /* width: 202px;
+    display: inline-block; */
     border: 1px solid #000000;
     padding: 17px 20px;
 }
 
 .para{
+    clear: left;
     vertical-align: top;
-    width: 69%;
-    display: inline-block;
-    padding-left: 20px;
+    display: inline;
 }
 .para1{
     color: #8F8F8F;
@@ -147,6 +148,7 @@ nav a{
     color: #8F8F8F;
     font-size: 16px;
     line-height: 24.51px;
+    clear: left;
 }
 
 /* rightbox */
@@ -204,7 +206,7 @@ nav a{
     padding: 0px 20px 0px 30px;
 }
 .bottombox1{
-    width: 35%;
+    width: 33%;
 }
 .bottombox h2{
     font-size: 43px;
@@ -212,19 +214,17 @@ nav a{
     padding-bottom: 12px;
 }
 .img2{
-    display: inline-block;
-    width: 44%;
-    padding: 26px 0px 34px 0px;
+    float: left;
+    padding-top: 26px;
+    margin-right: 8px;
 }
 .img2 img{
     border: 1px solid;
     padding: 13px 11px;
 }
 .para2{
-    display: inline-block;
-    width: 54%;
+    display: inline;
     padding-top: 26px;
-    margin-left: 5px;
     vertical-align: top;
 }
 
@@ -257,6 +257,9 @@ nav a{
     width: 28%;
 }
 
+.img5{
+    column-count: 3;
+}
 .img5 img{
     margin: 26px 16px 25px 0px;
 }
