@@ -133,7 +133,6 @@
     }
     .box{
         display: inline-block;
-        height: 445px;
         background-color: #FFFFFF;
         vertical-align: top;
         border-radius: 10px;
@@ -884,7 +883,7 @@
         background-size: 100% 100%;
         display: table;
         width: 100%;
-        padding-top: 4%;
+        padding-top: 0%;
         padding-left: 0%;
     }
     .banner-content{
