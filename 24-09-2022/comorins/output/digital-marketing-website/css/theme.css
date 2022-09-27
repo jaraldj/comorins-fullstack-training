@@ -22,6 +22,7 @@
 
 .help-section{
     background-color: #F6FBF9;
+    padding-bottom: 75px;
 }
 .container-help{
     width: 85%;
@@ -51,7 +52,7 @@
 .pyramid-image{
     position: absolute;
     top: 35px;
-    left: 130px;
+    left: 135px;
 }
 .help-section-head p a{
     text-decoration: none;
@@ -72,4 +73,77 @@
     font-weight: 500;
     color: #A3B938;
     text-decoration: none;
+}
+
+.heading-row h2{
+    font-size: 42px;
+    line-height: 65px;
+    font-weight: 700;
+    color: #253D32;
+    width: 75%;
+}
+.heading-anchor{
+    text-align: right;
+}
+.heading-para-content{
+    font-size: 24px;
+    line-height: 28.44px;
+    font-weight: 400;
+}
+.heading-para-content a{
+    color: #253D32;
+    text-decoration: none;
+    border-bottom: 2px solid #98AA28;
+}
+.heading-marketing{
+    font-size: 24px;
+    line-height: 28.44px;
+    font-weight: 400;
+}
+.heading-marketing a{
+    text-decoration: none;
+    color: #808371;
+}
+
+.head-row-height{
+    padding-top: 60px;
+}
+.card3-body{
+    padding-left: 0%;
+}
+.card3-body small{
+    font-size: 18px;
+    line-height: 21.33px;
+    font-weight: 400;
+}
+.card3-body h4{
+    font-size: 26px;
+    line-height: 36px;
+    font-weight: 500;
+    color: #253D32;
+    width: 90%;
+}
+.card3-body h5{
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 500;
+    color: #253D32;
+}
+.card-text-content{
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: 500;
+    color: #78847D;
+}
+.card3-a{
+    color: #98AA28;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23.7px;
+    padding: 22px 50px;
+    border: 1px solid;
+    border-radius: 192px;
+}
+.card3-padding40{
+    padding-top: 40px;
 }

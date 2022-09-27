@@ -98,7 +98,7 @@
 }
 
 .card1 ul{
-    height: 250px;
+    min-height: 250px;
 }
 .card1 li{
     font-size: 18px;
