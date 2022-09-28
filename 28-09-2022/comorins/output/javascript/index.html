@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+</head>
+<body>
+    
+    <script>
+        // resume
+
+        let resume = {
+            name : "Jarald J",
+            hobbies : ["Video games", "Cricket", "Exploring"],
+            education : [{
+                study : "10th",
+                institute : "Good Shepheard Matric Higher Secondary School Marthandam",
+                percentage : 70
+            },{
+                study : "12th",
+                institute : "Good Shepheard Matric Higher Secondary School Marthandam",
+                percentage : 65
+            },{
+                study : "B.E",
+                department : "CSE",
+                institute : "CSI Institute Of Technology Thovalai",
+                percentage : 68
+            }],
+            personalDetails : {
+                email : "jarald.jsj@gmail.com",
+                phone : 9566395309,
+                languages : ["Tamil","English"],
+                dateOfBirth : "29-June",
+                gender : "Male",
+                familyDetails : {
+                    fatherName : "Justus S",
+                    motherName : "Arul Joy",
+                    siblings : "Two Elder brothers",
+                }
+            },
+            skills : ["HTML","CSS","Javascript"],
+            certification : {
+                drgree : "B.E",
+                workshop : "Andriod Studio"
+            },
+            experiance : null,
+            areaOfIneterst : ["IT","Exploring","Front End Development"]
+        };
+
+
+        let total = 0;
+        let percentage;
+        let count = 0;
+        for(let i = 0; i <resume.education.length; i++){
+            if(resume.education[i].study != "12th"){
+                percentage = resume.education[i].percentage;
+                total = total + percentage;
+                count++
+            }           
+        }
+        console.log("Total Percentage: " + (total/count).toFixed(2)+ "%");
+
+
+
+        for(let i = 0; i < resume.education.length; i++){
+            console.log(resume.education[i].institute);
+        }
+
+        // conditional statement
+        // let a = 3;
+        // let b = 1;
+
+        // if(a<b){
+        // console.log("b is big");
+        // }else{
+        // console.log("a is big")
+        // }
+
+    </script>
+</body>
+</html>
