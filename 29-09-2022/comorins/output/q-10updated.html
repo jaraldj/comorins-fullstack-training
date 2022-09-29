@@ -15,10 +15,10 @@
     <script>
         function isEvenOrOdd(){
             let num = document.getElementById("numb").value;
-            if(num % 2){
-                console.log("The given number is odd");
-            }else{
+            if(num % 2 == 0){
                 console.log("The given number is even");
+            }else{
+                console.log("The given number is odd");
             }
             document.getElementById("numb").value = ""
         }
