@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Assigner</title>
+</head>
+<body>
+    <input type="number" id="mark">
+    <button id="check" onclick="check()">Check Grade</button>
+
+    <script>
+        function check(){
+        let mark = document.getElementById("mark").value;
+        document.getElementById("mark").value = ""
+        if(mark > 90){
+            console.log("Grade is A");
+        }
+        else if(mark > 75){
+            console.log("Grade is B");
+        }
+        else if(mark > 60){
+            console.log("Grade is C");
+        }
+        else if(mark > 40){
+            console.log("Grade is D");
+        }
+        else{
+            console.log("Grade is F");
+        }
+        }
+
+    </script>
+</body>
+</html>

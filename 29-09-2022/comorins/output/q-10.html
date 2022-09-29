@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power</title>
+</head>
+<body>
+
+    <input type="number" id="num">
+    <input type="number" id="expo">
+    <button onclick="numPower()">Power of</button>
+
+    <script>
+        function numPower(){
+            let power = document.getElementById("num").value
+            let expo = document.getElementById("expo").value
+            let powernum = Math.pow(power, expo)
+            console.log(powernum);
+            document.getElementById("num").value = ""
+            document.getElementById("expo").value = ""
+        }
+    </script>
+    
+</body>
+</html>
