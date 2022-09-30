@@ -9,8 +9,14 @@
 <body>
     
     <script>
-        let arr = Math.max(2, 5, 1, 9, 6, 3)
-        console.log(arr);
+        let arr = [2, 5, 1, 9, 6, 3]
+        let array = [0]
+        for(let i = 0; i < arr.length; i++){
+            if(array < arr[i]){
+                array = arr[i]
+            }
+        }
+        console.log(array);
     </script>
 </body>
 </html>
