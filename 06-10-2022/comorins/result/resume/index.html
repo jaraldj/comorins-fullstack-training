@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+    
+    <form>
+        <label>Name :</label>
+        <input type="text" onkeyup="addobj('fname', this.value)"/><br>
+        <label>Email :</label>
+        <input type="email" onkeyup="addobj('email', this.value)"/><br>
+        <label>Phone number :</label>
+        <input type="number" onkeyup="addobj('phoneNumber', this.value)"/><br>
+        <label>Role :</label>
+        <input type="text" onkeyup="addobj('role', this.value)"/><br>
+        <label>Skills :</label>
+        <input type="text" onkeyup="addobj('skills', this.value, 0)"/>
+        <input type="text" onkeyup="addobj('skills', this.value, 1)"/>
+        <input type="text" onkeyup="addobj('skills', this.value, 2)"/>
+        <input type="text" onkeyup="addobj('skills', this.value, 3)"/>
+        <input type="text" onkeyup="addobj('skills', this.value, 4)"/><br>
+
+        <label>Objective</label>
+        <textarea cols="30" rows="10" onkeyup="addobj('objective', this.value)"></textarea><br>
+
+        <label>Education :</label>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Course</th>
+                <th scope="col">Year</th>
+                <th scope="col">Insttute</th>
+                <th scope="col">Percentage</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td><input type="text" onkeyup="addobj('education', this.value, 0, 'course')"/></td>
+                <td><input type="number" onkeyup="addobj('education', this.value, 0 ,'year')"/></td>
+                <td><input type="text" onkeyup="addobj('education', this.value, 0, 'institute')"/></td>
+                <td><input type="text" onkeyup="addobj('education', this.value, 0, 'percentage')"/></td>
+                
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td><input type="text" onkeyup="addobj('education', this.value, 1, 'course')"/></td>
+                <td><input type="number" onkeyup="addobj('education', this.value, 1 ,'year')"/></td>
+                <td><input type="text" onkeyup="addobj('education', this.value, 1, 'institute')"/></td>
+                <td><input type="text" onkeyup="addobj('education', this.value, 1, 'percentage')"/></td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td><input type="text" onkeyup="addobj('education', this.value, 2, 'course')"/></td>
+                <td><input type="number" onkeyup="addobj('education', this.value, 2 ,'year')"/></td>
+                <td><input type="text" onkeyup="addobj('education', this.value, 2, 'institute')"/></td>
+                <td><input type="text" onkeyup="addobj('education', this.value, 2, 'percentage')"/></td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td><input type="text" onkeyup="addobj('education', this.value, 3, 'course')"/></td>
+                <td><input type="number" onkeyup="addobj('education', this.value, 3 ,'year')"/></td>
+                <td><input type="text" onkeyup="addobj('education', this.value, 3, 'institute')"/></td>
+                <td><input type="text" onkeyup="addobj('education', this.value, 3, 'percentage')"/></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <label>Certificate :</label>
+          <input type="text" onkeyup="addobj('cetification', this.value, 0)"/>
+          <input type="text" onkeyup="addobj('cetification', this.value, 1)"/>
+          <input type="text" onkeyup="addobj('cetification', this.value, 2)"/><br>
+
+          <label>Area Of Interest :</label>
+          <input type="text" onkeyup="addobj('areaOfInterest', this.value, 0)"/>
+          <input type="text" onkeyup="addobj('areaOfInterest', this.value, 2)"/>
+          <input type="text" onkeyup="addobj('areaOfInterest', this.value, 1)"/><br>
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Organisation</th>
+                <th scope="col">Role</th>
+                <th scope="col">Year Of Experiance</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td><input type="text" onkeyup="addobj('experiance', this.value, 0, 'organisation')"/></td>
+                <td><input type="text" onkeyup="addobj('experiance', this.value, 0,'roles')"/></td>
+                <td><input type="text" onkeyup="addobj('experiance', this.value, 0, 'years')"/></td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td><input type="text" onkeyup="addobj('experiance', this.value, 1, 'organisation')"/></td>
+                <td><input type="text" onkeyup="addobj('experiance', this.value, 1,'roles')"/></td>
+                <td><input type="text" onkeyup="addobj('experiance', this.value, 1, 'years')"/></td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td><input type="text" onkeyup="addobj('experiance', this.value, 2, 'organisation')"/></td>
+                <td><input type="text" onkeyup="addobj('experiance', this.value, 2,'roles')"/></td>
+                <td><input type="text" onkeyup="addobj('experiance', this.value, 2, 'years')"/></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <label>Personal Details</label>
+          <label>Father Name :</label>
+            <input type="text" onkeyup="addobj('personalDetails', this.value, 'fatherName')"/><br>
+            <label>Gender :</label>
+            <input type="text" onkeyup="addobj('personalDetails', this.value, 'gender')"/><br>
+            <label>Nationality :</label>
+            <input type="text" onkeyup="addobj('personalDetails', this.value, 'nationality')"/><br>
+            <label>dob :</label>
+            <input type="date" onchange="addobj('personalDetails', this.value, 'dob')"/><br>
+            <label>Address</label>
+            <textarea cols="30" rows="10" onkeyup="addobj('personalDetails', this.value, 'address')"></textarea><br>
+            <label>Languages</label>
+            <input type="text" onkeyup="addobj('languages', this.value, 0)"/>
+            <input type="text" onkeyup="addobj('languages', this.value, 1)"/>
+            <input type="text" onkeyup="addobj('languages', this.value, 2)"/><br>
+
+            <button onclick="submitResume()"><label>Submit</label></button>
+    </form>
+    
+    <div id="nameList">
+      <ul id="nameUl">
+        
+      </ul>
+    </div>
+
+
+    
+
+
+    <script src="js/script.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

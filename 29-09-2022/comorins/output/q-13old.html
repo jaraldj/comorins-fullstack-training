@@ -4,22 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Find Digit</title>
+    <title>Digit Sum</title>
 </head>
 <body>
+    
     <script>
-
-        function digitCount(digit){
-            let count = 0
+        function digitSum(digit){
+            let add = 0;
             while(digit != 0){
-                digit = Math.floor(digit/10);
-                //digit.toString().split("").length
-                count++
+                add += digit % 10
+                digit = Math.floor(digit/10)
             }
-            console.log(count);
+            console.log(add);
         }
-        digitCount(12333345)
-        
+        digitSum([123456])
     </script>
 </body>
 </html>

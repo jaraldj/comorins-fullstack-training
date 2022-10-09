@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+</head>
+<body>
+    <input type="text" id="todoinput"/>
+    <button id="addBtn" onclick="addItem()">Add</button>
+    <ul id="list">
+
+    </ul>
+    <div class="buttons">
+        <button onclick="emptyLocal()">Empty list</button>
+    </div>
+
+    <script>
+        
+        if(!localStorage.getItem("todos")){
+            localStorage.setItem("todos", JSON.stringify([]))
+        }
+
+        let list = JSON.parse(localStorage.getItem("todos"))
+        function addItem(){
+            let item = document.getElementById("todoinput").value;
+            list.push(item)
+            localStorage.setItem("todos", JSON.stringify(list))
+            document.getElementById("todoinput").value = ""
+            display()
+        }
+        function display(){
+            let ele = "";
+            let localList = JSON.parse(localStorage.getItem("todos"))
+            for(let i = 0; i < localList.length; i++){
+                ele += `<li> ${localList[i]}  <button onclick="removed(${i})">Delete</button>  </li>`
+            }
+            document.getElementById("list").innerHTML = ele;
+        }
+
+
+        
+        
+        function removed(i){
+            let newList = JSON.parse(localStorage.getItem("todos"))
+            console.log(i);
+            newList.splice(i, 1)
+            localStorage.setItem("todos", JSON.stringify(newList))
+            console.log(newList);
+            display()
+
+            console.log(newList);
+        }
+    
+        function emptyLocal(){
+            localStorage.removeItem("todos")
+            document.getElementById("list").innerHTML = "";
+        }
+        display()
+
+
+        
+
+    </script>
+</body>
+</html>

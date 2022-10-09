@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+<body>
+
+    <div class="container">
+        <h1 class="text-center">Resume</h1>
+        <h5><i class="fa-solid fa-user"></i> <span id="name"></span></h5>
+        <h5><i class="fa-solid fa-envelope"></i> <span id="email"></span></h5>
+        <h5><i class="fa-solid fa-phone"></i> <span id="phoneNum"></span></h5>
+        <h5>Role : <span id="role"></span></h5>
+        <h3>Personal Details</h3>
+        <h5>Father Name : <span id="fatherName"></span></h5>
+        <h5>Date Of Birth : <span id="dob"></span></h5>
+        <h5>Gender : <span id="gender"></span></h5>
+        <h5>Nationality : <span id="nationality"></span></h5>
+        <h5>Languages : <span id="languages"></span></h5>
+        <h3>Objective</h3>
+        <p id="objective"></p>
+        <h3>Skills</h3>
+        <ul id="skillsList">
+
+        </ul>
+
+
+        <h3>Education</h3>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Study</th>
+                <th scope="col">Institute</th>
+                <th scope="col">Percentage</th>
+                <th scope="col">Year</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td id="course0"></td>
+                <td  id="year0"></td>
+                <td  id="institute0"></td>
+                <td  id="percentage0"></td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td id="course1"></td>
+                <td  id="year1"></td>
+                <td  id="institute1"></td>
+                <td  id="percentage1"></td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td id="course2"></td>
+                <td  id="year2"></td>
+                <td  id="institute2"></td>
+                <td  id="percentage2"></td>
+              </tr>
+            </tbody>
+          </table>
+        <h3>Experiance</h3>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Organisation</th>
+                <th scope="col">Role</th>
+                <th scope="col">Year</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td  id="organisation0"></td>
+                <td  id="roles0"></td>
+                <td  id="years0"></td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td  id="organisation1"></td>
+                <td  id="roles1"></td>
+                <td  id="years1"></td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td  id="organisation2"></td>
+                <td  id="roles2"></td>
+                <td  id="years2"></td>
+              </tr>
+            </tbody>
+          </table>
+
+        
+    </div>
+
+    <script>
+      let resumeSelect = JSON.parse(localStorage.getItem("resumeList"))
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const nameurl = urlParams.get('name')
+        alert(nameurl);
+
+        for(let i = 0; i < resumeSelect.length; i++){
+          if(nameurl == resumeSelect[i].fname){
+            document.getElementById("name").textContent = resumeSelect[i].fname
+            document.getElementById("email").textContent = resumeSelect[i].email
+            document.getElementById("phoneNum").textContent = resumeSelect[i].phoneNumber
+            document.getElementById("role").textContent = resumeSelect[i].role
+            document.getElementById("objective").textContent = resumeSelect[i].objective;
+            console.log(typeof(document.getElementById("objective").innerHTML = resumeSelect[i].objective));
+
+
+            let personalDetails = resumeSelect[i].personalDetails
+            document.getElementById("fatherName").textContent = personalDetails.fatherName;
+            document.getElementById("dob").textContent = personalDetails.dob;
+            document.getElementById("gender").textContent = personalDetails.gender;
+            document.getElementById("nationality").textContent = personalDetails.nationality;
+            document.getElementById("languages").textContent = resumeSelect[i].languages;
+
+            let educationDetails = resumeSelect[i].education
+            for(let i = 0; i < educationDetails.length; i++){
+            document.getElementById("course"+i).textContent = educationDetails[i].course;
+            document.getElementById("year"+i).textContent = educationDetails[i].year;
+            document.getElementById("institute"+i).textContent = educationDetails[i].institute; 
+            document.getElementById("percentage"+i).textContent = educationDetails[i].percentage;
+            }
+
+            let experiances = resumeSelect[i].experiance
+            for(let i = 0; i < experiances.length; i++){
+              document.getElementById("organisation"+i).textContent = experiances[i].organisation;
+              document.getElementById("roles"+i).textContent = experiances[i].role;
+              document.getElementById("years"+i).textContent = experiances[i].years; 
+            }
+
+            let skillList = resumeSelect[i].skills
+            let ele = "";
+            for(let i = 0; i < skillList.length; i++){
+                ele += `<li> ${skillList[i]}</li>`
+            }
+            document.getElementById("skillsList").innerHTML = ele;
+          }
+          console.log(resumeSelect);
+        }
+    </script>
+</body>
+</html>
