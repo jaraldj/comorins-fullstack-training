@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #94ead2;
+}
+/* .wrap{
+    min-height: 100vh;
+    width: 80%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+} */
+.left-section{
+    grid-column: span 2;
+    height: 100%;
+    width: 30%;
+    background-color: #538d3a;
+    display: inline-block;
+}
+.right-section{
+    grid-column: span 5;
+    width: 69%;
+    vertical-align: top;
+    background-color: #f7f7f7;
+    display: inline-block;
+    height: 100%;
+}
+
+.left-container{
+    padding: 2rem 3rem;
+}
+#name{
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1.2rem 0;
+}
+#role{
+    font-size: 1.2rem;
+    color: #94D9EA;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-bottom: 1rem;
+}
+
+.main-title{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #f7f7f7ec;
+    padding-top: 1.7rem;
+}
+
+#contactInfo{
+    padding-top: 2rem;
+}
+#contactInfo h5{
+    padding: .4rem 0;
+    display: flex;
+    align-items: center;
+    color: #4809a5;
+}
+#contactInfo i{
+    padding-right: 1rem;
+    font-size: 1.2rem;
+    color: #4809a5;
+}
+
+#skillsList, #certicationList, #personalDetail{
+    padding-top: 2rem;
+}
+#skillsList li{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: .4rem 0;
+    text-transform: uppercase;
+    color: #f7f7f7;
+    font-size: 1rem;
+}
+
+#personalDetail h5{
+    padding: .4rem 0;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+#rightTitle{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #2F80ED;
+    margin-bottom: 1.2rem;
+    position: relative;
+}
+#rightTitle::after{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: .2rem;
+    background-color: #ccc;
+    border-radius: 12px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#objective{
+    line-height: 1.6rem;
+    color: #718096;
+    font-size: 1.1rem;
+}
+.right-container{
+    padding: 2rem 3rem;
+}
+.sect{
+    padding-bottom: 2rem;
+}
+tbody{
+    line-height: 1.6rem;
+    color: #718096;
+    font-size: 1.1rem;
+}
+#certicationList li{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0.4rem 0;
+    text-transform: uppercase;
+    color: #f7f7f7;
+    font-size: 1rem;
+}
+
+#interestList li{
+    padding: .4rem 0;
+    display: flex;
+    align-items: center;
+    color: #718096;
+}
