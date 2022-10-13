@@ -124,40 +124,10 @@ let restaurant = [{
 
 const container = document.getElementById('restaurantList');
 
-//if(!localStorage.getItem("restaurants")){
     localStorage.setItem("restaurants", JSON.stringify(restaurant))
-//}
 let restaurantArr = JSON.parse(localStorage.getItem("restaurants"))
 
 console.log(restaurantArr);
-
-
-// let ele = "";
-// function addCards(){
-//     for(let i =0; i < restaurantArr.length; i++){
-//         ele += `<a href = "view.html?restaurantName=${restaurantArr[i].restaurantName}">
-//                          <div class="Card">
-//                              <img src="${restaurantArr[i].img}" class="card-img-top" alt=""/>
-//                                  <div class="card-body">
-//                                      <h5 class="card-title">${restaurantArr[i].restaurantName}</h5>
-//                                      <p class="card-text">${restaurantArr[i].foodList}</p>
-//                                  </div>
-//                          </div>
-//                      </a>`
-//                      document.getElementById("restaurantList").innerHTML = ele;
-//     }
-// }
-
-
-
-
-
-
-
-// for(let i =0; i < restaurantArr.length; i++){
-//     document.getElementById("image").src = restaurantArr[i].img;
-//     document.getElementById("restaurant-name").innerHTML = restaurantArr[i].restaurantName;
-// }
 
 
 function returnCards(restaurant) {
