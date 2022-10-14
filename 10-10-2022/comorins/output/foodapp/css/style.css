@@ -16,3 +16,19 @@
 .cardImg50{
     border-radius: 50%;
 }
+
+.cardBorder{
+    border: none;
+}
+
+.navFix{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+
+.countItem{
+    position: relative;
+    bottom: 10px;
+}
