@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#restaurantCards{
+    display: inline-block;
+    width: 33%;
+    padding: 10px;
+}
+
+#restaurantCards img{
+    width: 100%;
+}
+
+.cardImg50{
+    border-radius: 50%;
+}
+
+.cardBorder{
+    border: none;
+}
+
+.navFix{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+
+.countItem{
+    position: relative;
+    bottom: 10px;
+}
+
+
+.footColum6 ul{
+    column-count: 3;
+}
+li{
+    list-style: none;
+}
+
+.footColum3 li{
+    display: inline-block;
+    padding: 10px;
+}
+.footCol3, .footColum3{
+    align-self: center;
+}
+.footColum3 ul{
+    float: right;
+}
+
+a{
+    text-decoration: none;
+}
+
+footer li{
+    font-size: 18px;
+    line-height: 28.13px;
+    font-weight: 400;
+    padding-bottom: 8px;
+}
+
+.footCol3 a{
+    font-size: 35px;
+    line-height: 28.13px;
+    font-weight: 400;
+}
