@@ -110,3 +110,12 @@ const queryString = window.location.search;
         }
 
         // <img src="${menu[i].imgUrl}" class="card-img-top" alt=""/>
+
+        function placeOrders(){
+          if(!localStorage.getItem("email")){
+            window.location.href="login.html"
+          }else{
+            window.location.href="placeorder.html"
+          }
+         
+        }

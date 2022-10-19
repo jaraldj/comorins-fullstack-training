@@ -12,7 +12,10 @@
       <body>
       
       <div class="container">
-        <h2>Login</h2>
+        <a href="index.html">
+          <img class="rounded mx-auto d-block mt-5 mb-5" src="images/foodizlogo.png" alt="">
+        </a>
+        <h2 class="text-center">Login</h2>
         <form>
 
           <div class="form-group">
@@ -48,10 +51,10 @@
         user_records=JSON.parse(localStorage.getItem("users"))?JSON.parse(localStorage.getItem("users")):[]
         if(user_records.some((v)=>{return v.email==email && v.psw==psw}))
         {
-          alert("Welcome");
           let current_user=user_records.filter((v)=>{return v.email==email && v.psw==psw})[0]
         localStorage.setItem('name',current_user.name);
         localStorage.setItem('email',current_user.email);
+        alert("Welcome" + " " + localStorage.getItem('name'));
           window.location.href="index.html"
         }
         else

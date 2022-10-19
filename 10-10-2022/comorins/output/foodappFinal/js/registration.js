@@ -12,6 +12,7 @@ function saveData()
     if(user_records.some((v)=>{return v.email==email}))
     {
       alert("Account already exist");
+      window.location.location = "registration.html"
     }
     else
     {
@@ -21,6 +22,7 @@ function saveData()
       "psw":psw
     })
 localStorage.setItem("users",JSON.stringify(user_records));
+window.location.href="login.html"
   }
 
   }

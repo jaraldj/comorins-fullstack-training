@@ -22,11 +22,11 @@ function cartViewCards()
 function placeOrder(){
     console.log("Clicked");
     let plcaceLocals = JSON.parse(localStorage.getItem("productInCart"));
+    localStorage.setItem("orders", JSON.stringify(placeLocal))
     localStorage.removeItem("productInCart")
     console.log(plcaceLocals);
     // localStorage.setItem("productInCart", JSON.stringify(plcaceLocals))
     // console.log(plcaceLocals);
-
     // plcaceLocals.remove()
     // localStorage.setItem("productInCart", JSON.stringify(plcaceLocals))
      alert("Order Placed Successfully!")
