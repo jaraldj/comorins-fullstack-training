@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="companyName">
+        <h2>Q1</h2>
+        <ul id="companyLi">
+
+        </ul>
+    </div>
+    <div id="companyNameByYear">
+        <h2>Q1</h2>
+        <ul id="yearLi">
+
+        </ul>
+    </div>
+    <div id="retail">
+
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    
+    <script>
+       // p1 q1
+let companies = [{
+  companyName : "Comorins",
+  year : 2017,
+  category : "retail"
+},{
+  companyName : "CapeStart",
+  year : 2010,
+  category : "retail"
+},{
+  companyName : "Infosys",
+  year : 1986,
+  category : "not retail"
+}];
+
+companies.forEach(element => console.log(element.companyName))
+
+// p1 q2
+companies.forEach((element)=>{
+  let name = element.year>1987 ? element.companyName : ""
+  return console.log(name)
+})
+// p1 q3
+// let find=companies.map((item)=>{
+//   if(item.category=="retail"){
+//     item.year=item.year.getFullYear()+1
+//     $("#retail").append(`<div class="col-3 card"><h1>name</h1><span>${item.companyName}</span><h2>category<h2>${item.category}<h3>date<h3>${item.year}<div>`)
+//   }
+// }) 
+
+// p1 q4
+let sortedCompany = companies.sort((a,b)=> a.year>b.yaear ? 1 : a.year<b.year ? -1 : 0)
+let sorted = sortedCompany.map(e => e.companyName)
+console.log(sorted)
+
+
+
+// p1 q5
+let ages = [22,24,27,19,34]
+let sortedAge = ages.sort()
+console.log(sortedAge)
+
+// p1 q6
+let reducedAge = ages.reduce((a,b)=> a + b)
+console.log(reducedAge) 
+
+// p1 q7
+
+
+// p1 q8
+let sum = (...args)=>{
+  let total = 0;
+  for(let nums of args){
+    total += nums
+  }
+  return console.log(total)
+}
+
+sum(1,2,4,6)
+
+// p1 q9
+let sums = ([...args])=>{
+  let add = ""
+  for(let sum in args){
+    add += sum
+  }
+  console.log(add)
+}
+
+sums([1,2,3,8])
+// sums([aa,bb])
+
+// p1 q10
+let person = {
+  name : "Jarald",
+  address : {
+    street : "Muzhucode",
+    area : "Arumanai"
+  }
+}
+
+let {name, address:{street, area}}= person
+console.log(street)
+console.log(name)
+
+// p1 q11
+let incre = 0;
+let increments = ()=>{
+  console.log(incre++)
+}
+increments()
+increments()
+
+// let sumTwo = (a,1) =>{
+//  let sumt = reduce(a,i)
+// }
+// console.log(sumTwo(2,3))
+
+let obj1 = {
+  brand : "Bajaj",
+  modal : "Pulsar",
+  color : "Black"
+}
+
+let obj2 = {
+  brand : "Yamaha",
+  modal : "R15",
+  color : "Black"
+}
+
+// let check = (obj1, obj2)=>{
+//   for(let key in obj2){
+//     let checkObj = obj1[key] != obj2[key] ? false : true
+//   }
+//      reutrn checkObj 
+// }
+// console.log(check(obj1, obj2))
+
+//p2 q4
+let arr = [1,2,3,4];
+let filterOutValues = [3,4];
+
+let newArr = arr.filter(val => !filterOutValues.includes(val));
+
+console.log(newArr);
+console.log(arr);
+
+//p2 q6
+let person1 = {
+  names : "Jarald",
+  addresss : {
+    streets : "Muzhucode",
+    areas : "Arumanai"
+  }
+}
+let {names, addresss:{streets, areas}}= person1
+console.log(streets)
+console.log(names)
+
+//p2 q5
+let chkVal = (variable) => {
+
+    if(variable == null) {
+        console.log('The variable is null');
+    }
+    else {
+       console.log('The variable is neither undefined nor null');
+    }
+}
+
+let newVariable;
+
+chkVal(5);
+chkVal('hello');
+chkVal(null);
+
+//p3 q1
+let person2 ={
+  name : "Jara",
+  dob : "29 June",
+  address : "Arumanai",
+  phone : 7708797941
+}
+for(let prop in person2){
+  console.log(prop)
+}
+
+//p3 q3
+console.warn("please update your browser")
+
+//p3 q4
+console.error("invalid password")
+
+//p3 q5
+let p = {
+  name : "Jara",
+  dob : "29 June",
+}
+let pKey = Object.keys(p)
+console.log(pKey)
+
+//p3 q6
+try{
+  let sum = (a,b) => a + b
+    console.log(sum(2,5)) 
+}catch{
+  console.log("err")
+}
+
+// p3 q7
+
+let currDay = (num) => {
+  var day;
+      switch(num)
+      {
+        case 0:
+          day="Sunday";
+          break;
+        case 1:
+          day="Monday";
+          break;
+        case 2:
+          day="Tuesday";
+          break;
+        case 3:
+          day="Wednesday";
+          break;
+        case 4:
+          day="Thursday";
+          break;
+        case 5:
+          day="Friday";
+          break;
+        case 6:
+          day="Saturday";
+          break;
+        default:
+          day="Invalid day";
+      }
+      return day;
+}
+
+let theDate = new Date()
+
+console.log(`Today is ${currDay(theDate.getDay())}`)
+
+// p3 q8
+let objEmp = {}
+let objEmpty = (objEmp) => Object.keys(objEmp).length === 0? console.log("Empty") : console.log("Not Empty");
+objEmpty(objEmp)
+
+// let isEmptyObject = (objEmp) =>{
+//     return JSON.stringify(objEmp) === '{}' ? console.log("Is Empty") :console.log("Is Not Empty") 
+// }
+// isEmptyObject(objEmp)
+
+// p3 q9
+let arrs = [2,1,4,6,9]
+let fin = arrs.find(arr=> arr>4)
+console.log(fin)
+
+let fil = arrs.filter(arr=> arr<6)
+console.log(fil)
+
+let index = arrs.indexOf(6)
+console.log(index)
+
+let spli = arrs.splice(2,1)
+console.log(spli)
+
+// p4 q1 q4
+let removeDup =(...arr)=> arr.filter((val,i)=>arr.indexOf(val)===i)
+console.log(removeDup("Jara", "Hello", "Jara","Hi","Hello"))
+
+// p5 q1
+let num1 = [2,4,1,5];
+let num2 = [11,20,22]
+let num3 = [...num1,...num2]
+console.log(num3)
+
+let max = Math.max(...num3)
+console.log(max)
+let min = Math.min(...num3)
+console.log(min)
+
+// p5 q2
+let fisherMan = [{
+  name : "Jarald",
+  score : 120
+},{
+  name : "Jara",
+  score : 80
+},{
+  name : "Arun",
+  score : 150
+},{
+  name : "Arjun",
+  score : 40
+}]
+
+let fisherManScore = fisherMan.map(e=>e.score)
+let total =fisherManScore.reduce((a,b)=>a+b)
+let average = total/fisherManScore.length
+console.log(total)
+console.log(average)
+let pass = (fisherMan.filter(e=>e.score>100)).map(e=>e.name)
+console.log(pass)
+
+// p5 q3
+let str = "hi734673";
+let matches = str.match(/\d+/g);
+console.log(matches)
+
+// p5 q4
+// let chkScore = () => {
+//   let chk = 
+// }
+
+// p5 q5
+let chkPositive = (a,b)=> a>0&&b>0 ? console.log("both values are positive") : a<0&&b<0 ? console.log("both values are negative") : console.log(" one value is positive")
+
+chkPositive(1,2)
+chkPositive(-1,2)
+chkPositive(-1,-2)
+
+// p6 q1
+
+    </script>
+</body>
+</html>

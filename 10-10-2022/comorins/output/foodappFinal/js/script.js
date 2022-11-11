@@ -121,6 +121,10 @@ let restaurant = [{
     ]
 }];
 
+if(localStorage.getItem("email")){
+    document.getElementById("logToggle").innerHTML = "<a class="+ nav-link +" id="+logToggle+" href="+registration.html+">Sign out</a>"
+}
+
 
 let container = document.getElementById('restaurantList');
 
