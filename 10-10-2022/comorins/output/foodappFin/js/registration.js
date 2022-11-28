@@ -23,8 +23,8 @@ function saveData()
     })
 localStorage.setItem("users",JSON.stringify(user_records));
 window.location.href="login.html"
-
   }
+
   }
 
 

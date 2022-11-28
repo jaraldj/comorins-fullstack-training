@@ -3,49 +3,6 @@
     padding: 0;
 }
 
-
-/* Restaurant Heading */
-.restaurantH1 h1{
-    font-size: 43px;
-    line-height: 65.87px;
-    color: #8F8F8F;
-    padding-bottom: 10px;
-}
-/* anchor tag color */
-.ancorColor{
-    color: inherit;
-}
-.ancorColor:hover{
-    color: #8F8F8F;
-}
-/* carosal padding */
-.carosalpad{
-    padding-top: 43px;
-}
-
-.restaurantH1 h5{
-    font-size: 22px;
-}
-.restaurantH1 p{
-    font-size: 12px;
-}
-
-.foodTypeList h2 {
-    font-size: 43px;
-    line-height: 65.87px;
-    color: #8F8F8F;
-    padding-bottom: 10px;
-}
-.foodTypeLi a{
-    color: inherit;
-    padding: 20px 0px;
-}
-footer a{
-    color: #fff;
-}
-footer a:hover{
-    color: #8F8F8F;
-}
 #restaurantCards{
     display: inline-block;
     width: 33%;
@@ -97,7 +54,7 @@ li{
 }
 
 a{
-    text-decoration: none !important;
+    text-decoration: none;
 }
 
 footer li{
@@ -108,8 +65,7 @@ footer li{
 }
 
 .footCol3 a{
-    font-size: 40px;
+    font-size: 35px;
     line-height: 28.13px;
     font-weight: 400;
 }
-

@@ -10,12 +10,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-  <!-- header starts here -->
   <header>
     <section class="navFix">
       <div class="container p-0">
       <nav class="navbar navbar-expand-lg navbar-light bg-white">
-          <a class="navbar-brand" href="index.html"><img class="w-25" src="images/foodizlogo.png" alt=""></a>
+          <a class="navbar-brand" href="index.html">Foodie</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -29,8 +28,8 @@
                 <a class="nav-link" href="#">Help</a>
               </li>
               
-              <li class="nav-item"  id="loginToggle">
-                <a class="nav-link" href="login.html">Sign in</a>
+              <li class="nav-item">
+                <a class="nav-link" href="registration.html">Sign in</a>
               </li>
               <li class="nav-item">
                   <a class="nav-link" href="placeorder.html"><i class="fa-solid fa-cart-shopping"><span class="countItem">0</span></i></a>
@@ -42,40 +41,32 @@
       </div>
     </section>
   </header>
-  <!-- header ends here -->
 
     <section class="pt-5">
         <div class="container">
           <div class="row m-0">
-  
-            <!-- menu list container starts here -->
+            <!-- <div class="col-3">
 
-            <div class="col-9 mt-4 pl-0">
+            </div> -->
+            <div class="col-9 pl-0">
               <div id="menuList">
                 
               </div>
             </div>
-            <!-- menu list container ends here -->
-
-            <!-- cart view starts here -->
-            <div class="col-3 mt-5 mb-5" id="placeBody">
+            <div class="col-3">
               <h3>Cart</h3>
               <div id="cartView">
 
               </div>
-              <h5 class="card-title subTotal">Subtotal: <div class="float-right"><span>&#8377;</span><span id="subTotals"></span></div></h5>
+              <h5 class="card-title subTotal">Subtotal: <span>&#8377;</span><span id="subTotals"></span></h5>
               <small>Extra Charges may apply</small>
-              <span id="verifyLogin">
-              <button class="btn btn-outline-success my-2 my-sm-0" onclick="placeOrders()" type="submit">Place Order</button>
-              </span>
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Place Order</button>
             </div>
-            <!-- cart view ends here -->
           </div>
             
         </div>        
     </section>
 
-    <!-- footer starts here -->
     <footer class="bg-dark p-5">
       <div class="container">
         <div class="row">
@@ -129,9 +120,7 @@
         </div>
       </div>
     </footer>
-    <!-- footer ends here -->
 
-    <script src="js/script.js"></script>
     <script src="js/view.js"></script>
 </body>
 </html>

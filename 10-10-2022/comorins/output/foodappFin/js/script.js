@@ -121,14 +121,8 @@ let restaurant = [{
     ]
 }];
 
-
 if(localStorage.getItem("email")){
-    document.getElementById("loginToggle").innerHTML = `<a class="nav-link" href="index.html" onclick = "logOut()">Sign out</a>`
-}
-
-function logOut(){
-    localStorage.removeItem("email")
-    localStorage.removeItem("name")
+    document.getElementById("logToggle").innerHTML = "<a class="+ nav-link +" id="+logToggle+" href="+registration.html+">Sign out</a>"
 }
 
 
@@ -143,7 +137,7 @@ console.log(restaurantArr);
 function returnCards(restaurant) {
     return "<div class=\"restaurantCard\">" + restaurant.map(restaurants => `
         <div id = "restaurantCards">
-            <a class="ancorColor" href = "view.html?restaurantName=${restaurants.restaurantName}">
+            <a href = "view.html?restaurantName=${restaurants.restaurantName}">
                 <div class="Card">
                     <img src="${restaurants.img}" class="card-img-top" alt=""/>
                         <div class="card-body">
@@ -156,6 +150,8 @@ function returnCards(restaurant) {
   }
   
   container.innerHTML = returnCards(restaurant);
+
+
 
 
 

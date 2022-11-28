@@ -2,7 +2,7 @@ let menuSelect = JSON.parse(localStorage.getItem("restaurants"));
 const queryString = window.location.search;
         const urlParams = new URLSearchParams(queryString);
         const url = urlParams.get('restaurantName')
-        // alert(url);
+        alert(url);
         
         
         let menuContainer = document.getElementById("menuList")
@@ -35,31 +35,30 @@ const queryString = window.location.search;
         }
 
 
-      //   for(let i =0; i < menuSelect.length; i++){
-      //     if(url == menuSelect[i].category){
-      //        let menus = menuSelect[i].foodMenu[i].category
-      //        let ele = "";
-      //        console.log(menus);
-      //       for(let i = 0; i < menus.length; i++){
-      //         ele += `<div class="card mb-3 cardBorder">
-      //         <div class="row no-gutters">   
-      //           <div class="col-md-9">
-      //             <div class="card-body pl-0">
-      //               <h5 class="card-title">${menus[i].foodName}</h5>
-      //               <p class="card-text d-inline"><span>${menus[i].price}</span></p>
-      //               <p class="card-text"><small class="text-muted">${menus[i].desc}</small></p>
-      //             </div>
-      //           </div>
-      //           <div class="col-md-3 my-auto addBtn">
-      //             <button class="btn btn-outline-success my-2 my-sm-0 ml-5 addToCart" type="submit">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
-      //           </div>
-      //         </div>
-      //       </div>`
+        for(let i =0; i < menuSelect.length; i++){
+          if(url == menuSelect[i].category){
+             let menus = menuSelect[i].foodMenu[i].category
+             let ele = "";
+            for(let i = 0; i < menus.length; i++){
+              ele += `<div class="card mb-3 cardBorder">
+              <div class="row no-gutters">   
+                <div class="col-md-9">
+                  <div class="card-body pl-0">
+                    <h5 class="card-title">${menus[i].foodName}</h5>
+                    <p class="card-text d-inline"><span>${menus[i].price}</span></p>
+                    <p class="card-text"><small class="text-muted">${menus[i].desc}</small></p>
+                  </div>
+                </div>
+                <div class="col-md-3 my-auto addBtn">
+                  <button class="btn btn-outline-success my-2 my-sm-0 ml-5 addToCart" type="submit">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+              </div>
+            </div>`
 
-      //       }
-      //       menuContainer.innerHTML = ele;
-      //     }
-      // }
+            menuContainer.innerHTML = ele;
+            }
+          }
+      }
 
 
         let btn = document.getElementsByClassName("addToCart")
@@ -99,13 +98,6 @@ const queryString = window.location.search;
           document.getElementById("cartView").innerHTML = cartEle;
           document.getElementById("subTotals").innerHTML = subTotal;
         }
-        // if(!JSON.parse(localStorage.getItem("email"))){
-        //   let logele = "";
-        //   logele = `
-        //   <a href="login.html"><button class="btn btn-outline-success my-2 my-sm-0" type="submit">Place Order</button></a> 
-        //   `
-        //   document.getElementById("verifyLogin") = logele;
-        // }
         
         cartViewCard()
 
@@ -116,16 +108,14 @@ const queryString = window.location.search;
           localStorage.setItem("productInCart", JSON.stringify(newLocal))
           cartViewCard()
         }
-      
+
         // <img src="${menu[i].imgUrl}" class="card-img-top" alt=""/>
 
-       function placeOrders(){
-        if(!localStorage.getItem("email")){
-          window.location.href="login.html"
-        }else{
-          window.location.href="placeorder.html"
+        function placeOrders(){
+          if(!localStorage.getItem("email")){
+            window.location.href="login.html"
+          }else{
+            window.location.href="placeorder.html"
+          }
+         
         }
-       
-      }
-      
-       
